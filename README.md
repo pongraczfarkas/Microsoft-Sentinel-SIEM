@@ -10,8 +10,13 @@ Key highlights of this project include:
 - Incident Response: Demonstrated problem-solving skills by implementing remediation actions to mitigate and resolve identified cybersecurity incidents.
 - Azure Cloud Proficiency: Enhanced proficiency in Azure Cloud services, a significant asset in the cybersecurity landscape.
 
-This project has significantly enriched my cybersecurity expertise, showcasing my ability to respond effectively to security breaches and adding substantial value to my resume. It positions me as a capable professional ready to tackle cybersecurity challenges and opens doors to numerous opportunities in the field.
+## Technologies used
 
+- Microsoft Azure: [Register](https://azure.microsoft.com/en-us/free/)
+- Microsoft Sentinel All-in-one: [Download](https://github.com/Azure/Azure-Sentinel/tree/master/Tools/Sentinel-All-In-One)
+- Brave: [Download](https://brave.com/)
+
+## Walkthrough
 
 <p align="center"><img src="https://github.com/user-attachments/assets/9aa48c18-4f37-41e4-9201-fede82092ec0" alt="image"></p>
 <p align="center"><img src="https://github.com/user-attachments/assets/8e2f5af8-ad03-409e-82db-65c82a8995b0" alt="image"></p>
