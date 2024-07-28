@@ -56,21 +56,25 @@ After the deployment, I see that there are crucial templates that have not been 
 Now my resources are deploying and after 15-20 minutes all of the templates have installed correctly (except the one that I don't have a subscription for, but it is not a problem for this demonstration)
 <p align="center"><img src="https://github.com/user-attachments/assets/161c2be7-5cc6-4bef-bb20-4673c1bc7ae9" alt="image"></p>
 <p align="center"><img src="https://github.com/user-attachments/assets/c9e5803b-7907-4078-9805-a2ecd33a9bbc" alt="image"></p>
-
+Here are now all the assets which got deployed. The most important here for me is the Log Analytics Workspace because this is where all the data is stored. As Microsoft Sentinel is built on top of the Log Analytics workspace not only I want to monitor what happens inside Sentinel but also what happens within the Log Analytics workspace.
 <p align="center"><img src="https://github.com/user-attachments/assets/5d2d5b20-1137-4a6e-a3ea-f28d7e5be2b5" alt="image"></p>
-
 <p align="center"><img src="https://github.com/user-attachments/assets/a2f6d68d-24eb-43cc-9e5a-eeb7214b60a5" alt="image"></p>
+Now I will turn in the Diagnostic Settings, which will send all the logs to this workspace.
 <p align="center"><img src="https://github.com/user-attachments/assets/f0e572ba-c0be-4a41-9f87-d4c44b03055a" alt="image"></p>
 <p align="center"><img src="https://github.com/user-attachments/assets/57ed114b-6714-4459-a5d5-856e2e038e22" alt="image"></p>
 <p align="center"><img src="https://github.com/user-attachments/assets/f7a91e22-c914-40b8-a724-27e4b6a522ff" alt="image"></p>
-
+Now let's move to Microsoft Sentinel logs.
 <p align="center"><img src="https://github.com/user-attachments/assets/26e0d6cc-8c22-4314-b898-62c8cc9e55fc" alt="image"></p>
 <p align="center"><img src="https://github.com/user-attachments/assets/e35a51a1-3dc8-4b2f-adc9-742b10814b31" alt="image"></p>
+Here I can search for data using KQL (Kusto Query Language)
 <p align="center"><img src="https://github.com/user-attachments/assets/a43ba24f-0e19-4def-92ec-2ad9deb750a0" alt="image"></p>
+On the left side, the are dropdown menus which include data tables, where all the information is. I will be using a table called `SignInLogs` in my investigation a lot. But there are othe tables, such as `AzureActivity`. Or if for some reason the `SignInLogs` table hasn't loaded in yet, it is possible to find similar information in `AADNonInteractiveUserSignInLogs` table. In the tables connected to logins, the location data will be really important for me.
 <p align="center"><img src="https://github.com/user-attachments/assets/50c1043c-584a-4931-b184-74b450a2b308" alt="image"></p>
 <p align="center"><img src="https://github.com/user-attachments/assets/33ac5d18-08f9-4b1e-a745-7c3572c8d1bd" alt="image"></p>
 <p align="center"><img src="https://github.com/user-attachments/assets/bd9eb7ca-f67b-4e06-97ef-ef4b1efff0b5" alt="image"></p>
+Next I will explore the Analytics section. These were automatically deployed from the template. There are 273 detection rules provided by Microsoft. For example, new cloud shell user, suspicious applications, network port sweep etc.
 <p align="center"><img src="https://github.com/user-attachments/assets/b926f558-ef40-4031-8c72-2c7248b1242b" alt="image"></p>
+There are also anomaly templates, which I wanted to take a quick look at. For these, Microsoft allows to change threshold point in case the give a lot of false positives. These work with the user and entity behavior analytics which is currently not working. This is an artificial intelligence tool which is used to detect any ususual behavior
 <p align="center"><img src="https://github.com/user-attachments/assets/4e3d2290-bdfc-4ad8-bc61-7d45d7329270" alt="image"></p>
 
 <p align="center"><img src="https://github.com/user-attachments/assets/48357850-4ac2-4937-899f-c1c1c8445896" alt="image"></p>
