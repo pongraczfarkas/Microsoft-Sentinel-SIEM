@@ -32,17 +32,28 @@ Key features include:
 
 This solution ensures a seamless and efficient deployment process, making it easier for users to leverage the full capabilities of Microsoft Sentinel for enhanced security operations.
 <p align="center"><img src="https://github.com/user-attachments/assets/9aa48c18-4f37-41e4-9201-fede82092ec0" alt="image"></p>
+Selecting the location during the deployment of Microsoft Sentinel is crucial, especially for production environments, to comply with industry standards and regulations regarding user data storage. The location also affects the cost per gigabyte of data ingested. For this demonstration, I will choose a location closest to me, such as Norway East.
+
+Key configuration steps include:
+
+- Location Selection: Choose a location based on regulatory requirements and cost considerations.
+- Resource Group and Workspace Name: Select meaningful names, such as "security monitoring."
+- Daily Ingestion Limit: Set to 10GB, which is free for the first month.
+- Data Retention: Microsoft provides free data retention for the first 90 days; charges apply afterward.
 <p align="center"><img src="https://github.com/user-attachments/assets/8e2f5af8-ad03-409e-82db-65c82a8995b0" alt="image"></p>
+Here I will enable only enable Sentinel Health diagnostics and I might turn on the artificial intelligence later.
 <p align="center"><img src="https://github.com/user-attachments/assets/223c5b05-f7c4-45a8-8b45-0a63e3b34244" alt="image"></p>
+For this demonstration I will enable all option in the next couple of steps, regardless if I have the license for them or not. 
 <p align="center"><img src="https://github.com/user-attachments/assets/0e00b795-a953-4556-bd81-af81dae5c98a" alt="image"></p>
 <p align="center"><img src="https://github.com/user-attachments/assets/8aab4fe1-be88-4108-9d85-a72756e7f51a" alt="image"></p>
 <p align="center"><img src="https://github.com/user-attachments/assets/966e7006-7485-49fa-b8c4-73524aab97fc" alt="image"></p>
+After the deployment, I see that there are crucial templates that have not been implemented properly in my system. After looking at the error messages it clearly shows that I have not turned on some subscriptions on my resource group. I will do this quickly and then do everything I have just done from scratch.
 <p align="center"><img src="https://github.com/user-attachments/assets/74da3e8f-4d67-498f-874c-1e80351c315c" alt="image"></p>
 <p align="center"><img src="https://github.com/user-attachments/assets/8dff30a2-5bb2-4725-8daf-1a1063983024" alt="image"></p>
 <p align="center"><img src="https://github.com/user-attachments/assets/c2fe1339-dff3-49e0-8513-bdc4baceea50" alt="image"></p>
-
 <p align="center"><img src="https://github.com/user-attachments/assets/3f004019-ec02-4119-9f4f-867a7eb947be" alt="image"></p>
 <p align="center"><img src="https://github.com/user-attachments/assets/36bec134-1f39-4bf8-a669-db8c0e4d293b" alt="image"></p>
+Now my resources are deploying and after 15-20 minutes all of the templates have installed correctly (except the one that I don't have a subscription for, but it is not a problem for this demonstration)
 <p align="center"><img src="https://github.com/user-attachments/assets/161c2be7-5cc6-4bef-bb20-4673c1bc7ae9" alt="image"></p>
 <p align="center"><img src="https://github.com/user-attachments/assets/c9e5803b-7907-4078-9805-a2ecd33a9bbc" alt="image"></p>
 
