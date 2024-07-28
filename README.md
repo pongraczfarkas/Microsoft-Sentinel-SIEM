@@ -96,9 +96,11 @@ One more awesome feature of watchlists is that they are easily modifyable. This 
 <p align="center"><img src="https://github.com/user-attachments/assets/9031e4c0-6636-4bfa-9f2a-a52fe528bf48" alt="image"></p>
 Now I will proceed to create an analytics rule that will detect threats from the Tor Network.
 <p align="center"><img src="https://github.com/user-attachments/assets/323fef57-9192-4181-8af6-90b0215d69b6" alt="image"></p>
+Here I will make a scheduled rule as I plan to run this every 5 minutes
 <p align="center"><img src="https://github.com/user-attachments/assets/96d8a239-c4e7-4f64-94c6-9cb7bfe9ba23" alt="image"></p>
+It is a great feature to add a threat type from the MITRE framwork directly to the alert. I will add T0822 for mine. I have also changed the aalert severity to High.
 <p align="center"><img src="https://github.com/user-attachments/assets/14386eb8-4243-4e6c-84a7-2ded495d8eb8" alt="image"></p>
-
+And no clicking on "Set rule logic" I can make my own query with KQL. After a lot of tries and thinking what could be an important information, I have decided to be happy with this query.
 <p align="center"><img src="https://github.com/user-attachments/assets/26f19721-cbd7-4ef9-9078-4edf1f7efe15" alt="image"></p>
 
 ```
@@ -121,20 +123,25 @@ SigninLogs
     ConditionalAccessPolicies
 ```
 
+I can also enhance alerts with introducing key value pairs from the data. I can refer with the keys within an alert to make it more punctual when it arises. I decided to add some variables just to try out the feature.
 <p align="center"><img src="https://github.com/user-attachments/assets/10313b34-964b-4a19-a8b9-114af0a088e3" alt="image"></p>
 <p align="center"><img src="https://github.com/user-attachments/assets/b81a719e-4626-49e4-8f80-cc20e426e5b5" alt="image"></p>
 <p align="center"><img src="https://github.com/user-attachments/assets/b230cdc4-0d1a-4aac-8170-2a6c63c3f919" alt="image"></p>
+Here I set the scheduling to run for every 5 minutes.
 <p align="center"><img src="https://github.com/user-attachments/assets/baddd4ba-a7d5-4ed8-b08e-e49820d20eb9" alt="image"></p>
+I also set up alert grouping which is packing in events into one alert up to 150 events. Above that it creates a new event. This makes it easier to view the alerts.
 <p align="center"><img src="https://github.com/user-attachments/assets/d84866f8-b26d-41cd-8869-0c9041757653" alt="image"></p>
 <p align="center"><img src="https://github.com/user-attachments/assets/b69a8b90-5e61-4fd8-8f55-48731b13787f" alt="image"></p>
-
+In the next step I will make a new account to perform some "hacking" on. But first, let's turn off Security Defaults. Microsoft will automatically turn this feature on for a new Azure ad as it provides crucial baseline level of protection for all users and accounts in organization. This includes MFA for all administrators blocking legacy authentications such as iMap or Smtp, which helps to reduce risk of attacks like password spray and brute force attacks. Security defaults also require strong password. That means the organization password complexity requirements which helps to prevent attackers from guessing or cracking weak passwords. Let's go to Entra ID|Properties and disable the security defaults.
 <p align="center"><img src="https://github.com/user-attachments/assets/3d706812-5bf1-4982-9f3c-232c15990320" alt="image"></p>
 <p align="center"><img src="https://github.com/user-attachments/assets/aa295c4b-3f0b-463c-bc8e-99c9664b46d6" alt="image"></p>
 <p align="center"><img src="https://github.com/user-attachments/assets/450b93d7-f92b-4b70-b5cd-98dd78aa7a08" alt="image"></p>
+Now I will create my new user named John Doe.
 <p align="center"><img src="https://github.com/user-attachments/assets/8e31cd21-60fb-4c10-97ce-4a19ac16ba2e" alt="image"></p>
 <p align="center"><img src="https://github.com/user-attachments/assets/94a2e538-1d6d-430f-80d4-33ad7206bf9b" alt="image"></p>
 <p align="center"><img src="https://github.com/user-attachments/assets/dd5f6894-089a-4465-8ac7-0e3d63d043bf" alt="image"></p>
 <p align="center"><img src="https://github.com/user-attachments/assets/9c7a4b9d-f837-4ac0-a29a-bfec1ffab138" alt="image"></p>
+I will also give some rights to this user, such as Contributor, Security Reader so I can wreak more havoc. These are different role, Security Reader is a Directory role, while Contributor is an Administrative role within the Resource group.
 <p align="center"><img src="https://github.com/user-attachments/assets/1b10e07b-468e-4abc-9bdf-c6e698aa9f56" alt="image"></p>
 <p align="center"><img src="https://github.com/user-attachments/assets/cb2c1807-b9e7-481d-bb0c-9f2a581849e1" alt="image"></p>
 <p align="center"><img src="https://github.com/user-attachments/assets/320db19c-6874-4ee4-94da-ca6c35ba8959" alt="image"></p>
