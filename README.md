@@ -78,19 +78,23 @@ There are also anomaly templates, which I wanted to take a quick look at. For th
 <p align="center"><img src="https://github.com/user-attachments/assets/4e3d2290-bdfc-4ad8-bc61-7d45d7329270" alt="image"></p>
 To turn this feature on, I will go to the settings tab and set click on the set UEBA button.
 <p align="center"><img src="https://github.com/user-attachments/assets/48357850-4ac2-4937-899f-c1c1c8445896" alt="image"></p>
+Here I will apply this to Entra ID and apply all the existing data sources. And just like the I enabled AI in Microsoft Sentinel.
 <p align="center"><img src="https://github.com/user-attachments/assets/ca149d08-5960-45a5-a3ab-940ef0bab73f" alt="image"></p>
+I also want to configure automation playbooks. Here I will just select the resource group and apply changes.
 <p align="center"><img src="https://github.com/user-attachments/assets/f76d659d-af79-449c-940d-0b88c55f3d6c" alt="image"></p>
 <p align="center"><img src="https://github.com/user-attachments/assets/490faf6f-550a-4250-b031-ff42c99c6c7d" alt="image"></p>
 
-
+Now I will create a custom watchlist with the Tor Exit Nodes. I will do this because I will use this later in my investigation. I will navigate to the Watchlist section and add a new Watchlist.
 <p align="center"><img src="https://github.com/user-attachments/assets/ee067c9b-7cfa-4292-b31d-083a975843c2" alt="image"></p>
 <p align="center"><img src="https://github.com/user-attachments/assets/791c7e5b-53e4-4189-9188-0b7fbb856f7e" alt="image"></p>
 <p align="center"><img src="https://github.com/user-attachments/assets/8b231e43-0219-428e-b266-9656eb27907d" alt="image"></p>
+The .csv file is included in the repository [here](https://github.com/pongraczfarkas/Microsoft-Sentinel-SIEM/blob/main/Tor+Exit+Nodes.csv)
 <p align="center"><img src="https://github.com/user-attachments/assets/e2a78424-3ceb-46e2-bd6d-451c328b65af" alt="image"></p>
 <p align="center"><img src="https://github.com/user-attachments/assets/059712fa-2d98-4fe9-be63-165b2f111f14" alt="image"></p>
+One more awesome feature of watchlists is that they are easily modifyable. This is important if there are multiple analytics rules using the same dataset.
 <p align="center"><img src="https://github.com/user-attachments/assets/cfe48c8a-e5a8-41f7-9206-ffbdf0ef571a" alt="image"></p>
 <p align="center"><img src="https://github.com/user-attachments/assets/9031e4c0-6636-4bfa-9f2a-a52fe528bf48" alt="image"></p>
-
+Now I will proceed to create an analytics rule that will detect threats from the Tor Network.
 <p align="center"><img src="https://github.com/user-attachments/assets/323fef57-9192-4181-8af6-90b0215d69b6" alt="image"></p>
 <p align="center"><img src="https://github.com/user-attachments/assets/96d8a239-c4e7-4f64-94c6-9cb7bfe9ba23" alt="image"></p>
 <p align="center"><img src="https://github.com/user-attachments/assets/14386eb8-4243-4e6c-84a7-2ded495d8eb8" alt="image"></p>
