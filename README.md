@@ -74,11 +74,11 @@ On the left side, the are dropdown menus which include data tables, where all th
 <p align="center"><img src="https://github.com/user-attachments/assets/bd9eb7ca-f67b-4e06-97ef-ef4b1efff0b5" alt="image"></p>
 Next I will explore the Analytics section. These were automatically deployed from the template. There are 273 detection rules provided by Microsoft. For example, new cloud shell user, suspicious applications, network port sweep etc.
 <p align="center"><img src="https://github.com/user-attachments/assets/b926f558-ef40-4031-8c72-2c7248b1242b" alt="image"></p>
-There are also anomaly templates, which I wanted to take a quick look at. For these, Microsoft allows to change threshold point in case the give a lot of false positives. These work with the user and entity behavior analytics which is currently not working. This is an artificial intelligence tool which is used to detect any ususual behavior
+There are also anomaly templates, which I wanted to take a quick look at. For these, Microsoft allows to change threshold point in case the give a lot of false positives. These work with the user and entity behavior analytics which is currently not working. This is an artificial intelligence tool which is used to detect any ususual behavior.
 <p align="center"><img src="https://github.com/user-attachments/assets/4e3d2290-bdfc-4ad8-bc61-7d45d7329270" alt="image"></p>
-
+To turn this feature on, I will go to the settings tab and set click on the set UEBA button.
 <p align="center"><img src="https://github.com/user-attachments/assets/48357850-4ac2-4937-899f-c1c1c8445896" alt="image"></p>
-<p align="center"><img src="https://github.com/user-attachments/assets/fcc5349f-0bd3-43ea-a34f-cae792b39bb5" alt="image"></p>
+<p align="center"><img src="https://github.com/user-attachments/assets/ca149d08-5960-45a5-a3ab-940ef0bab73f" alt="image"></p>
 <p align="center"><img src="https://github.com/user-attachments/assets/f76d659d-af79-449c-940d-0b88c55f3d6c" alt="image"></p>
 <p align="center"><img src="https://github.com/user-attachments/assets/490faf6f-550a-4250-b031-ff42c99c6c7d" alt="image"></p>
 
