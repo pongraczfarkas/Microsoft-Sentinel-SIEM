@@ -88,7 +88,7 @@ Now I will create a custom watchlist with the Tor Exit Nodes. I will do this bec
 <p align="center"><img src="https://github.com/user-attachments/assets/ee067c9b-7cfa-4292-b31d-083a975843c2" alt="image"></p>
 <p align="center"><img src="https://github.com/user-attachments/assets/791c7e5b-53e4-4189-9188-0b7fbb856f7e" alt="image"></p>
 <p align="center"><img src="https://github.com/user-attachments/assets/8b231e43-0219-428e-b266-9656eb27907d" alt="image"></p>
-The .csv file is included in the repository [here](/pongraczfarkas/Microsoft-Sentinel-SIEM/blob/main/Tor%2BExit%2BNodes.csv)
+The .csv file is included in the repository [here](https://github.com/pongraczfarkas/Microsoft-Sentinel-SIEM/blob/main/Tor%2BExit%2BNodes.csv)
 <p align="center"><img src="https://github.com/user-attachments/assets/e2a78424-3ceb-46e2-bd6d-451c328b65af" alt="image"></p>
 <p align="center"><img src="https://github.com/user-attachments/assets/059712fa-2d98-4fe9-be63-165b2f111f14" alt="image"></p>
 One more awesome feature of watchlists is that they are easily modifyable. This is important if there are multiple analytics rules using the same dataset.
